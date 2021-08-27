@@ -13,7 +13,7 @@
       What do you want to sell today?
     </x-slot>
 
-    <form method="POST" action="/product">
+    <form method="POST" action="/product" enctype="multipart/form-data">
 
       @csrf
 

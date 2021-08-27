@@ -32,7 +32,9 @@ class ProductsController extends Controller
       ]);
 
       //Upload the image
+      $path=$request->file('img')->store('product_images');
 
       //Insert data into the products table
+      
     }
 }
