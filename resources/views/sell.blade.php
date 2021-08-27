@@ -1,11 +1,19 @@
 <x-base-layout>
   <x-form-container-card>
 
+    @if($errors->any())
+      <div class="text-red-600 text-xs">
+        @foreach($errors->all() as $error)
+          <div>{{$error}}</div>
+        @endforeach
+      </div>
+    @endif
+
     <x-slot name="title">
       What do you want to sell today?
     </x-slot>
 
-    <form>
+    <form method="POST" action="/product">
 
       @csrf
 

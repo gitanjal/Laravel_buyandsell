@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,5 +33,7 @@ Route::get('/product/{id}',function(){
 Route::get('/sell',function(){
   return view('sell');
 });
+
+Route::post('/product',[ProductsController::class,'store']);
 
 require __DIR__.'/auth.php';
