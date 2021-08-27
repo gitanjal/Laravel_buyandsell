@@ -14,15 +14,13 @@ use App\Http\Controllers\ProductsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/products',function(){
+Route::get('/',function(){
   return view('products');
 });
 
@@ -32,7 +30,7 @@ Route::get('/product/{id}',function(){
 
 Route::get('/sell',function(){
   return view('sell');
-});
+})->middleware('auth');
 
 Route::post('/product',[ProductsController::class,'store']);
 
