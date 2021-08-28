@@ -8,7 +8,12 @@ use Illuminate\Support\Facades\Auth;
 
 class ProductsController extends Controller
 {
-    //
+    //Fetch all products
+    public function index()
+    {
+        $products=Product::all();
+        return view('products')->with('products',$products);
+    }
 
     //Funtion to store product information on the database
     public function store(Request $request){
