@@ -3,14 +3,14 @@
     <div class="flex m-4">
       <!-- Left half -->
       <div class="w-1/2 rounded shadow overflow-hidden">
-        <img class="object-cover w-full" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"/>
+        <img class="object-cover w-full" src="{{$product->image_url}}"/>
       </div>
 
       <!-- Right half -->
       <div class="w-1/2 rounded bg-white ml-2 p-4 shadow relative">
-        <div class="font-semibold">Headphone</div>
-        <div class="text-sm text-gray-500">Excellent quality headphones at a low cost</div>
-        <div class="text-xs text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+        <div class="font-semibold">{{$product->title}}</div>
+        <div class="text-sm text-gray-500">{{$product->short_desc}}</div>
+        <div class="text-xs text-gray-500 mt-2">{{$product->long_desc}}</div>
 
         <!-- Seller information -->
         <div class="mt-4">
@@ -36,9 +36,9 @@
 
         <!-- Product price -->
         <div class="absolute bottom-0 right-0 m-6 rounded-full px-4 py-2 bg-green-500">
-          <div class="text-white font-bold text-sm">$20</div>
+          <div class="text-white font-bold text-sm">${{$product->price}}</div>
         </div>
       </div>
     </div>
 
-</x-base-layout>  
+</x-base-layout>

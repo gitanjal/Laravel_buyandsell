@@ -15,6 +15,12 @@ class ProductsController extends Controller
         return view('products')->with('products',$products);
     }
 
+    //Fetch a product by id
+    public function show($id){
+        $product=Product::find($id);
+        return view('product')->with('product',$product);
+    }
+
     //Funtion to store product information on the database
     public function store(Request $request){
 

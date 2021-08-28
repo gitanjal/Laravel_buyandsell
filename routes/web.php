@@ -22,9 +22,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/',[ProductsController::class,'index']);
 
-Route::get('/product/{id}',function(){
-  return view('product');
-});
+Route::get('/product/{id}',[ProductsController::class,'show']);
 
 Route::get('/sell',function(){
   return view('sell');
