@@ -3,7 +3,7 @@
     <div class="flex m-4">
       <!-- Left half -->
       <div class="w-1/2 rounded shadow overflow-hidden">
-        <img class="object-cover w-full" src="{{$product->image_url}}"/>
+        <img class="object-cover w-full" src="{{asset($product->image_url)}}"/>
       </div>
 
       <!-- Right half -->
@@ -15,12 +15,12 @@
         <!-- Seller information -->
         <div class="mt-4">
           <div class="text-xs font-semibold text-gray">Sold by:</div>
-          <div class="text-sm  text-gray-500">John Doe</div>
+          <div class="text-sm  text-gray-500">{{$product->user->name}}</div>
         </div>
         <div class="mt-2">
           <div class="text-xs font-semibold text-gray">Phone number:</div>
           @auth
-              <div class="text-sm  text-gray-500">0123456789</div>
+              <div class="text-sm  text-gray-500">{{$product->user->phone}}</div>
           @else
               <div class="text-sm  text-gray-500">**********<a href="/login" class="text-xs text-blue-500">Login to view</a></div>
           @endauth
@@ -28,7 +28,7 @@
         <div class="mt-2">
           <div class="text-xs font-semibold text-gray">Email address:</div>
           @auth
-              <div class="text-sm  text-gray-500">abc@example.com</div>
+              <div class="text-sm  text-gray-500">{{$product->user->email}}</div>
           @else
               <div class="text-sm  text-gray-500">**********<a href="/login" class="text-xs text-blue-500">Login to view</a></div>
           @endauth
