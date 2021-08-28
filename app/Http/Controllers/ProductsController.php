@@ -15,6 +15,13 @@ class ProductsController extends Controller
         return view('products')->with('products',$products);
     }
 
+    //Fetch own products
+    public function showOwnProducts()
+    {
+        $products= Product::where('user_id',Auth::id())->orderBy('created_at','desc')->get();
+        return view('dashboard')->with('products',$products);
+    }
+
     //Fetch a product by id
     public function show($id){
         $product=Product::find($id);
