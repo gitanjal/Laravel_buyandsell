@@ -3,7 +3,7 @@
     <div class="flex m-4">
       <!-- Left half -->
       <div class="w-1/2 rounded shadow overflow-hidden">
-        <img class="object-cover w-full" src="{{asset($product->image_url)}}"/>
+        <img class="object-cover w-full h-96" src="{{asset($product->image_url)}}"/>
       </div>
 
       <!-- Right half -->
