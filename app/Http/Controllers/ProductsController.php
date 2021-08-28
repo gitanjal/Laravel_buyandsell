@@ -11,7 +11,7 @@ class ProductsController extends Controller
     //Fetch all products
     public function index()
     {
-        $products=Product::orderBy('created_at','desc')->get();
+        $products=Product::orderBy('created_at','desc')->simplePaginate(15);
         return view('products')->with('products',$products);
     }
 
