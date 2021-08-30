@@ -28,4 +28,8 @@ Route::get('/sell',function(){
 
 Route::post('/product',[ProductsController::class,'store']);
 
+Route::get('/edit/{id}',[ProductsController::class,'edit'])->middleware('auth');
+
+Route::post('/update/{id}',[ProductsController::class,'update'])->middleware('auth');
+
 require __DIR__.'/auth.php';

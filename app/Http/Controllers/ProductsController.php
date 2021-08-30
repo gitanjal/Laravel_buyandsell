@@ -67,4 +67,46 @@ class ProductsController extends Controller
 
       return redirect('/product/'.$product->id);
     }
+
+    public function edit($id){
+      $product=Product::find($id);
+      return view('edit')->with('product',$product);
+    }
+
+    public function update(Request $request,$id){
+      $request->validate([
+        'price'=>'numeric'
+      ]);
+
+      $product=Product::find($id);
+
+      if($request->hasFile('img'))
+      {
+        $path=$request->file('img')->store('product_images');
+      }
+
+      if(!empty($request->input('title')))
+      {
+        $product->title=$request->input('title');
+      }
+
+      if(!empty($request->input('desc-sm')))
+      {
+        $product->short_desc=$request->input('desc-sm');
+      }
+
+      if(!empty($request->input('desc-full')))
+      {
+        $product->long_desc=$request->input('desc-full');
+      }
+
+      if(!empty($request->input('price')))
+      {
+        $product->price=$request->input('price');
+      }
+
+      $product->save();
+
+      return redirect('/product/'.$product->id);
+    }
 }
