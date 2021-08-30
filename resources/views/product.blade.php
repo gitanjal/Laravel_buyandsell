@@ -14,9 +14,10 @@
             <a href="/edit/{{$product->id}}">
               <div class="bg-blue-500 rounded-full px-4 py-2 shadow text-xs text-white">Edit</div>
             </a>
-            <a href="/delete/{{$product->id}}">
-              <div class="bg-red-300 ml-1 rounded-full px-4 py-2 shadow text-xs text-white">Delete</div>
-            </a>
+            <form method="POST" action="/delete/{{$product->id}}">
+              @csrf
+              <input type="submit" value="Delete" class="bg-red-300 ml-1 rounded-full px-4 py-2 shadow text-xs text-white" />
+            </form>
           </div>
         @endif
 

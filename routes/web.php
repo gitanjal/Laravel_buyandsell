@@ -32,4 +32,6 @@ Route::get('/edit/{id}',[ProductsController::class,'edit'])->middleware('auth');
 
 Route::post('/update/{id}',[ProductsController::class,'update'])->middleware('auth');
 
+Route::post('/delete/{id}',[ProductsController::class,'destroy'])->middleware('auth');
+
 require __DIR__.'/auth.php';
