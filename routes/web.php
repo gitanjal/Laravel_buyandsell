@@ -28,7 +28,7 @@ Route::get('/sell',function(){
 
 Route::post('/product',[ProductsController::class,'store']);
 
-Route::get('/edit/{id}',[ProductsController::class,'edit'])->middleware('auth');
+Route::get('/edit/{id}',[ProductsController::class,'edit'])->middleware(['auth','verify_seller']);
 
 Route::post('/update/{id}',[ProductsController::class,'update'])->middleware('auth');
 
