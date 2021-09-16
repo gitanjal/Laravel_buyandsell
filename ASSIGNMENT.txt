@@ -1,0 +1,4 @@
+##File: routes/web.php
+-----------------------
+Task 1: Add the appropiate URI to the function Route::get() below
+Task 2: Pass the name of the view you want to load to the function view()
