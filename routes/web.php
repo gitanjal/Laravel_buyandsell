@@ -21,8 +21,13 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/products',function(){
-  return view('products');
+/*
+  **ASSIGNMENT**
+  Task 1: Add the appropiate URI to the function Route::get() below
+  Task 2: Pass the name of the view you want to load to the function view()
+*/
+Route::get('',function(){
+  return view('');
 });
 
 require __DIR__.'/auth.php';
