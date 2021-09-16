@@ -1,7 +1,12 @@
 <html>
   <head>
     <title>Buy And Sell</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <!--
+    ****ASSIGNMENT BLOCK****
+    Task 1: Add the link to stylesheet, make the styles work
+    -->
+    <link rel="stylesheet" href="">
+    <!-- ****ASSIGNMENT BLOCK ENDS**** -->
   </head>
   <body class="bg-gray-50">
     <h1>Welcome to BnS</h1>
