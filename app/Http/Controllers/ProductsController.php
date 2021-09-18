@@ -11,12 +11,16 @@ class ProductsController extends Controller
     //Funtion to store product information on the database
     public function store(Request $request){
 
+      /*
+      ***ASSIGNMENT***
+      Task 1: Add rules to ensure that the price is numeric, and not empty?
+      */
       //validate the inputs
       $request->validate([
         'title'=>'required',
         'desc-sm'=>'required',
         'desc-full'=>'required',
-        'price'=>'required|numeric',
+        // 'price'=>'required|numeric',
         'img'=>'required'
       ],[
         'title.required'=>'Please enter a title',
