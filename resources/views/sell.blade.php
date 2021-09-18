@@ -7,7 +7,10 @@
 
     <form>
 
-      @csrf
+      <!-- ASSIGNMENT -->
+      <!-- Task 2: Our form is not secure now, add the csrf directive to make it secure. -->
+
+      <!-- @csrf -->
 
       <div class="mt-2">
         <label for="title" class="text-sm text-gray-500">Product title</label>

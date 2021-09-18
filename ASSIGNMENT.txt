@@ -3,3 +3,5 @@ Task 1: We shall load the form to post an ad for a product on clicking the 'sell
           But currently it is getting loaded as the home page!
           Fix this by passing the correct URI to the first parameter of the function below?
           [##File: /routes/web.php (Line no- 35)]
+Task 2: Our form is not secure now, add the csrf directive to make it secure.
+        [##File: /resources/views/sell.blade.php (Line no- 10)]
