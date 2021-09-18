@@ -39,7 +39,7 @@ class ProductsController extends Controller
 
       /*
       ***ASSIGNMENT***
-      Task 1: To insert the infotmation into the database, we have to create an instance of the 
+      Task 1: To insert the infotmation into the database, we have to create an instance of the
             corresponding model, assign the input values to the respective fields and then we have to
             call a function to save the data. This function call seems to be missing from the code
             below. Call the appropiate function to insert the data to the products table.
@@ -53,7 +53,7 @@ class ProductsController extends Controller
       $product->image_url=$path;
       $product->user_id=Auth::id();
 
-      $product->save();
+      // $product->save();
 
       return redirect('/product/'.$product->id);
     }
