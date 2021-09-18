@@ -1,0 +1,3 @@
+Task 1: Which function of an eloquent model fetches all the items from the corresponding database table?
+        Call that function below.
+          [##File: app\Http\Controllers\ProductsController.php (Line no- 15)]

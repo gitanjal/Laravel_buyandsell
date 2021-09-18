@@ -11,7 +11,12 @@ class ProductsController extends Controller
     //Fetch all products
     public function index()
     {
-        $products=Product::all();
+        /*
+        ***ASSIGNMENT***
+        Task 1: Which function of an eloquent model fetches all the items from the corresponding database table?
+                Call that function below.
+        */
+        $products=Product::????;
         return view('products')->with('products',$products);
     }
 
