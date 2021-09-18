@@ -1,4 +1,9 @@
-<x-base-layout>
+<!-- ASSIGNMENT -->
+<!-- Task 1: Currently the header and the footer are missing from the product details page,
+      are the component tags missing?-->
+
+
+<!-- <x-base-layout> -->
     <!-- Main Content -->
     <div class="flex m-4">
       <!-- Left half -->
@@ -41,4 +46,4 @@
       </div>
     </div>
 
-</x-base-layout>  
+<!-- </x-base-layout>   -->
