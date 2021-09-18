@@ -17,9 +17,13 @@ Route::get('/register', [RegisteredUserController::class, 'create'])
 Route::post('/register', [RegisteredUserController::class, 'store'])
                 ->middleware('guest');
 
-Route::get('/login', [AuthenticatedSessionController::class, 'create'])
-                ->middleware('guest')
-                ->name('login');
+/*
+****ASSIGNMENT BLOCK****
+***HINT(Task 1, products.blade.php): You have to uncomment the following route***
+*/
+// Route::get('/login', [AuthenticatedSessionController::class, 'create'])
+//                 ->middleware('guest')
+//                 ->name('login');
 
 Route::post('/login', [AuthenticatedSessionController::class, 'store'])
                 ->middleware('guest');

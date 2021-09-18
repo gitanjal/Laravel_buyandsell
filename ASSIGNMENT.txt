@@ -1,0 +1,4 @@
+##File: resources/views/products.blade.php
+-----------------------
+Task 1: The links for login, registration are currently not visible on the website,
+      is there anything wrong in the code below? [Find a hint in the routes/auth.php file]

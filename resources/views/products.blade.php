@@ -14,6 +14,11 @@
           </svg>
         </div>
         <div>
+          <!-- ASSIGNMENT BLOCK -->
+          <!--
+              Task 1: The links for login,registration are currently not visible on the website,
+                    is there anything wrong in the code below? [Find a hint in the routes/auth.php file]
+            -->
           @if (Route::has('login'))
               <div>
                   @auth
