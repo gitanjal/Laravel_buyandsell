@@ -1,0 +1,4 @@
+      Task 1: Pass the proper class to the function belongsTo() to establish the relationship with the users table.
+          [##File: app\Models\Product.php (Line no- 14  )]
+      Task 2: Display the name of seller below.
+          [##File: resources\views\product.blade.php (Line no- 17)]

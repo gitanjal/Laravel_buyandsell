@@ -10,6 +10,10 @@ class Product extends Model
     use HasFactory;
 
     public function user(){
-      return $this->belongsTo(User::class);
+      /*
+      ***ASSIGNMENT***
+      Task 1: Pass the proper class to the function belongsTo() to establish the relationship with the users table.
+      */
+      return $this->belongsTo( ??? );
     }
 }

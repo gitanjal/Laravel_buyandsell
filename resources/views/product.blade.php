@@ -13,9 +13,13 @@
         <div class="text-xs text-gray-500 mt-2">{{$product->long_desc}}</div>
 
         <!-- Seller information -->
+        <!--
+        ***ASSIGNMENT***
+        Task 2: Display the name of seller below.
+        -->
         <div class="mt-4">
           <div class="text-xs font-semibold text-gray">Sold by:</div>
-          <div class="text-sm  text-gray-500">{{$product->user->name}}</div>
+          <div class="text-sm  text-gray-500"> Name ??? </div>
         </div>
         <div class="mt-2">
           <div class="text-xs font-semibold text-gray">Phone number:</div>
