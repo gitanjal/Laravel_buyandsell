@@ -1,4 +1,4 @@
-##File: resources/views/product.blade.php
------------------------
-Task 1: Currently the header and the footer are missing from the product details page,
-      are the component tags missing?
+Task 1:We have to return the view for this component. Are we returning the view from the correct directory?[##File: app/View/components/BaseLayout.php (Line no- 27)]
+Task 2: We have to echo the variable $slot to include the content here, are we doing that?[##File: resources/views/layouts/base-layout.blade.php (Line no- 37)]
+Task 3: Currently the header and the footer are missing from the product details page,
+      are the component tags missing?[##File: resources/views/product.blade.php (Line no- 1)]

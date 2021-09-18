@@ -23,6 +23,10 @@ class BaseLayout extends Component
      */
     public function render()
     {
-        return view('layouts.base-layout');
+        /*
+        ***ASSIGNMENT***
+        ***Task 1:We have to return the view for this component. Are we returning the view from the correct directory?
+        */
+        return view('views.base-layout');
     }
 }

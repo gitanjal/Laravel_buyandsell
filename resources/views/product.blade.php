@@ -1,5 +1,5 @@
 <!-- ASSIGNMENT -->
-<!-- Task 1: Currently the header and the footer are missing from the product details page,
+<!-- Task 3: Currently the header and the footer are missing from the product details page,
       are the component tags missing?-->
 
 

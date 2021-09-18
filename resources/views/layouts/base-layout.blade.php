@@ -34,8 +34,11 @@
       </div>
     </nav>
 
+    <!-- ASSIGNMENT
+        Task 2: We have to echo the variable $slot to include the content here, are we doing that?
+    -->
     <!-- Main Content -->
-    {{$slot}}
+    <!-- {{$slot}} -->
 
     <!-- Footer -->
     <div class="flex justify-between px-2 py-4 text-sm text-gray-500 items-center border-t m-4">
