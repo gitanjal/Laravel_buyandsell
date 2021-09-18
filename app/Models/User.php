@@ -12,6 +12,11 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    /*
+    ***ASSIGNMENT***
+    Task 2: Add the string 'phone' to the fillable array.
+    */
+
     /**
      * The attributes that are mass assignable.
      *
@@ -21,7 +26,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'phone',
+      //  'phone',
     ];
 
     /**

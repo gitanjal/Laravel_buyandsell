@@ -40,11 +40,15 @@ class RegisteredUserController extends Controller
             'phone'=>'required|numeric',
         ]);
 
+        /*
+        ***ASSIGNMENT***
+        Task 1: Add the phone number to the array being passed to the constructor.
+        */
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'phone'=>$request->phone,
+            //'phone'=>$request->phone,
         ]);
 
         event(new Registered($user));

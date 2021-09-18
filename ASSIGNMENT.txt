@@ -1,0 +1,4 @@
+Task 1: Add the phone number to the array being passed to the constructor.
+          [##File: app\Http\Controllers\Auth\RegisteredUserController.php (Line no- 44  )]
+Task 2: Add the string 'phone' to the fillable array.
+          [##File: app\Models\User.php (Line no- 15  )]
