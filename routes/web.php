@@ -29,7 +29,16 @@ Route::get('/product/{id}',function(){
   return view('product');
 });
 
-Route::get('/sell',function(){
+
+/*
+**ASSIGNMENT**
+**Task 1: We shall load the form to post an ad for a product on clicking the 'sell' button,
+          Or on entering the url www.bns.go/sell on the browser's addressbar.
+          But currently it is getting loaded as the home page!
+          Fix this by passing the correct URI to the first parameter of the function below?
+          **
+*/
+Route::get('/',function(){
   return view('sell');
 });
 
