@@ -17,7 +17,12 @@ class ProductsController extends Controller
 
     //Fetch a product by id
     public function show($id){
-        $product=Product::find($id);
+
+      /*
+      ***ASSIGNMENT***
+      Task 1: Call the appropiate function of the Product model to fetch a product by the id.
+      */
+        $product=Product::????;
         return view('product')->with('product',$product);
     }
 

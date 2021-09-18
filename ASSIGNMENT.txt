@@ -1,0 +1,2 @@
+Task 1: Call the appropiate function of the Product model to fetch a product by the id.
+          [##File: app\Http\Controllers\ProductsController.php (Line no- 22)]
