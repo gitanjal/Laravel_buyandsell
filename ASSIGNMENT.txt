@@ -1,0 +1,5 @@
+Task 1: Are we calling the correct function below (create()!! we simply want to add a column to an existing table)?
+  Call the correct fucntion.
+          [##File: database/migrations/2021_08_21_193754_add_column_image_url_to_products_table.php (Line no- 16)]
+Task 2: Is $db the instance of Blueprint that we have inside this function? Replace with the correct one.
+                  [##File: database/migrations/2021_08_21_193754_add_column_image_url_to_products_table.php (Line no- 22)]
