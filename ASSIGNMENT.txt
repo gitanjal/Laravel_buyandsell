@@ -1,0 +1,3 @@
+Task 1: $request->file('img') gives us the file selected by the user,
+            Now call the appropiate function to store this file on the server.
+          [##File: app\Http\Controllers\ProductsController.php (Line no- 35)]

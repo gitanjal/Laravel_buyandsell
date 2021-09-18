@@ -31,10 +31,15 @@ class ProductsController extends Controller
         'img'=>'product image'
       ]);
 
+      /*
+      ***ASSIGNMENT***
+      Task 1: $request->file('img') gives us the file selected by the user,
+            Now call the appropiate function to store this file on the server.
+      */
       //Upload the image
-      $path=$request->file('img')->store('product_images');
+      $path=$request->file('img')->???  ;
 
       //Insert data into the products table
-      
+
     }
 }
