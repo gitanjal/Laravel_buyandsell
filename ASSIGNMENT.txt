@@ -1,0 +1,4 @@
+##File: resources/views/product.blade.php
+-----------------------
+Task 1: Task 1: The phone number is visible even when the user is not logged in.
+        Is there anything wrong below? [Line number 56 ]

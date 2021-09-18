@@ -52,12 +52,16 @@
           <div class="text-xs font-semibold text-gray">Sold by:</div>
           <div class="text-sm  text-gray-500">John Doe</div>
         </div>
+
+        <!-- ASSIGNMENT BLOCK -->
+        <!-- Task 1: The phone number is visible even when the user is not logged in.
+                      Is there anything wrong below? -->
         <div class="mt-2">
           <div class="text-xs font-semibold text-gray">Phone number:</div>
           @auth
-              <div class="text-sm  text-gray-500">0123456789</div>
-          @else
               <div class="text-sm  text-gray-500">**********<a href="/login" class="text-xs text-blue-500">Login to view</a></div>
+          @else
+              <div class="text-sm  text-gray-500">0123456789</div>
           @endauth
         </div>
         <div class="mt-2">
@@ -65,7 +69,7 @@
           @auth
               <div class="text-sm  text-gray-500">abc@example.com</div>
           @else
-              <div class="text-sm  text-gray-500">**********<a href="/login" class="text-xs text-blue-500">Login to view</a></div>  
+              <div class="text-sm  text-gray-500">**********<a href="/login" class="text-xs text-blue-500">Login to view</a></div>
           @endauth
         </div>
 
