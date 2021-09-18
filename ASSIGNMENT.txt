@@ -1,0 +1,2 @@
+Task 1: Apply the appropiate middleware to restrict the access to the sell route.
+          [##File: routes\web.php (Line no- 32)]

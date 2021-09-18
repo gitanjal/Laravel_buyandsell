@@ -28,9 +28,13 @@ Route::get('/product/{id}',function(){
   return view('product');
 });
 
+/*
+***ASSIGNMENT***
+Task 1: Apply the appropiate middleware to restrict the access to the sell route.
+*/
 Route::get('/sell',function(){
   return view('sell');
-})->middleware('auth');
+})-> ???? ;
 
 Route::post('/product',[ProductsController::class,'store']);
 
